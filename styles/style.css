@@ -2,63 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(250, 224, 184);
+    background-color: #eaeded;
 }
-.header {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 200px;
+header h1 { 
+    font-size: 100px; 
+    font-family: cursive; 
+    background:linear-gradient(127deg, rgb(202, 202, 202), #3f87a6  )
 }
+    .header {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+    background: linear-gradient( #eaeded , #3f87a6 );
+    }
 .logo {
     height: 150px;
-    width: 150px;
+    width: auto;
 }
-header h1 {
-    color: #000000;
-    font-size: 100px;
-    font-family: 'Times New Roman', Times, serif;
+
+.home{
+    height: auto;
+    width: 300px;
 }
-.principal {
+.contenedor {
     display: grid;
-    grid-area: 
-    "i1 i2 i1 i2"
-    "i3 i4 i3 i4"
-    ;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 15px 30px;
+    max-width: fit-content;
+    margin: 0 auto;
 }
-.productos-home{
-    grid-area: i1;
-    height: auto;
-    width: 300px;
+.contenedor .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(1, 0 ,0);
 }
-.quimicos-home{
-    grid-area: i2;
-    height: auto;
+.contenedor .card img {
     width: 300px;
-}
-.nosotros-home{
-    grid-area: i3;
     height: auto;
-    width: 300px;
-}
-.contacto-home{
-    grid-area: i4;
-    height: auto;
-    width: 300px;
 }
 .navegador{
-    background-color: aqua;
+    background-color: #808b96;
 }
 .espacios {
-    color: #8b8b8b;
-    background-color: aqua;
+    color: #f1948a;
+    background-color: #808b96;
 }
 .boton {
     height: 2vh;
     width: 10vw;
     color: aliceblue;
-    background-color: #8b8b8b;
+    background-color: #69b9ff;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .productos {
     height: 400px;
     width: 400px;
