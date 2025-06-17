@@ -7,14 +7,12 @@
 header h1 { 
     font-size: 100px; 
     font-family: cursive; 
-    background: linear-gradient(  #eaeded , #4e4e4e  )
 }
 .header {
     display: flex;
     flex-direction: row;
     gap: 50px;
     padding: 20px;
-    background: linear-gradient(  #4e4e4e ,#eaeded  );
 }
 .logo {
     height: 150px;
@@ -23,12 +21,13 @@ header h1 {
 .home-p {
     display: grid;
     grid-template-areas: 
-    "h1 h2";
+    "h1 h2 ";
     gap: 25px;
     align-content: center;
     align-items: center;
     justify-content: center;
     justify-items: center;
+    margin-top: 25px;
 }
 .home h1{
     grid-area: h1;
@@ -45,6 +44,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     justify-items: center;
+    margin-top: 25px;
 }
 .home v1{
     grid-area: h3;
@@ -61,7 +61,6 @@ header h1 {
     color: #a5a5a5;
     font-family: cursive;
     background-color: rgba(0, 0, 0, 0.75);
-    margin: 50px 0 10px 0 ;
 }
 .titulos{
     display: flex;
@@ -131,6 +130,7 @@ header h1 {
 .video{
     width: 1000px;
     height: auto;
+    margin: 20px;
 }
 .mapa-c {
     display: flex;
@@ -144,11 +144,6 @@ header h1 {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-
-}
-.derecho{
-    display: flex;
-    justify-content: flex-start;
 }
 .contacto{
     display: flex;
@@ -164,11 +159,15 @@ header h1 {
     .contenedor {
         grid-template-columns: repeat(2, 1fr);
     }
+        .video {
+        width: 500px;
+    }
 }
 @media (max-width: 800px) {
     .contenedor {
         grid-template-columns: repeat(1, 1fr);
     }
+
 }
 @media (max-width: 700px) {
     .home-c {
@@ -180,5 +179,16 @@ header h1 {
         grid-template-areas: 
         "h1"
         "h2";
+    }
+}
+@media (max-width: 425px) {
+    .header h1 {
+        font-size: 50px;
+    }
+    .logo {
+    height: 100px;
+}
+        .video {
+        width: 400px;
     }
 }
