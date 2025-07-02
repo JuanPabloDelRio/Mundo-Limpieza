@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+    h1{
+        font-size: 100px;
+        font-family: cursive;
+    }
+    .logo {
+        height: 150px;
+        width: auto;
+    }
+}
