@@ -8,16 +8,14 @@
 body {
   background-color: #eaeded;
 }
-
-.navegador {
+body .navegador {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   color: #eaeded;
   background-color: #030303;
 }
-
-.espacios {
+body .navegador .espacios {
   margin: 10px;
   font-size: 20px;
   text-decoration: none;
@@ -39,24 +37,6 @@ header h1 {
 header .logo {
   height: 150px;
   width: auto;
-}
-
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-  background-color: #030303;
-  color: #eaeded;
-}
-footer .contacto {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-footer .derechos {
-  display: flex;
-  justify-content: flex-start;
 }
 
 .home-p, .home-c {
@@ -111,6 +91,14 @@ footer .derechos {
   font-size: 80px;
   margin: 25px 0;
 }
+.titulos .boton {
+  height: 50px;
+  width: 40vw;
+  color: #eaeded;
+  background-color: #030303;
+  font-family: cursive;
+  font-size: 20px;
+}
 
 .contenedor {
   display: grid;
@@ -120,7 +108,6 @@ footer .derechos {
   align-items: center;
   margin: 25px auto;
 }
-
 .contenedor .card {
   display: flex;
   flex-direction: column;
@@ -128,10 +115,72 @@ footer .derechos {
   padding: 2rem;
   box-shadow: 0 2px 5px rgb(1, 0, 0);
 }
-
 .contenedor .card img {
   width: 300px;
   height: auto;
+}
+
+.home-contacto {
+  display: flex;
+}
+.home-contacto .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 10px;
+}
+.home-contacto .formulario .boton {
+  height: 40px;
+  width: 35vw;
+  color: #eaeded;
+  background-color: #030303;
+  font-family: cursive;
+  font-size: 20px;
+}
+.home-contacto .video-c {
+  display: flex;
+  justify-content: flex-end;
+}
+.home-contacto .video-c .video {
+  width: 1000px;
+  height: auto;
+  margin: 20px;
+}
+
+.mapa-web .nosotros {
+  margin: 50px 30px;
+}
+.mapa-web .mapa-c {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.pie {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin-top: 25px;
+  background-color: #030303;
+  color: #eaeded;
+}
+.pie .derechos {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.pie .contacto {
+  display: flex;
+  justify-content: flex-start;
+}
+.pie .contacto .redes {
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

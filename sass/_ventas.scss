@@ -8,6 +8,9 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: j.$titulos;
     margin: 25px 0;
+    .boton{
+        @include j.boton-style (50px, 40vw, j.$gray, j.$letra, cursive, 20px)
+    }
 }
 .contenedor{
     display: grid;
@@ -16,15 +19,17 @@
     max-width: fit-content;
     align-items: center;
     margin: 25px auto;
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        box-shadow: 0 2px 5px rgba(1, 0 ,0);
+        img {
+            width: 300px;
+            height: auto;
+        }
+    }
 }
-.contenedor .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    box-shadow: 0 2px 5px rgba(1, 0 ,0);
-}
-.contenedor .card img {
-    width: 300px;
-    height: auto;
-}
+
+

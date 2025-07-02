@@ -11,18 +11,28 @@ $subtitulos: 50px;
 }
 body {
     background-color: $gray;
+        .navegador{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        color: $gray;
+        background-color: $letra;
+        .espacios{
+            margin: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: $gray;
+            background-color: $letra;
+        }
+    }
 }
-.navegador{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    color: $gray;
-    background-color: $letra;
-}
-.espacios{
-    margin: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    color: $gray;
-    background-color: $letra;
+
+
+@mixin boton-style ($height, $width, $color, $back-color, $font-fam, $font-size){
+    height: $height;
+    width: $width;
+    color: $color;
+    background-color: $back-color;
+    font-family: $font-fam;
+    font-size: $font-size;
 }
