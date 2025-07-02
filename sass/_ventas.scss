@@ -1,0 +1,30 @@
+@use "variable" as j;
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: j.$letra;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: j.$titulos;
+    margin: 25px 0;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 15px 30px;
+    max-width: fit-content;
+    align-items: center;
+    margin: 25px auto;
+}
+.contenedor .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(1, 0 ,0);
+}
+.contenedor .card img {
+    width: 300px;
+    height: auto;
+}

@@ -1,16 +1,19 @@
+@use "variable" as j;
 
-    footer{
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: j.$letra;
+    color: j.$gray;
+    .contacto{ 
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px;
-        .contacto{ 
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-        }
-        .derechos {
-            display: flex;
-            justify-content: flex-start;
-        }
+        flex-direction: row;
+        gap: 10px;
     }
+    .derechos {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

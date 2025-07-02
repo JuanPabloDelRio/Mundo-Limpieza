@@ -1,9 +1,28 @@
+$gray: #eaeded;
+$letra: #030303;
+$titulos: 80px;
+$subtitulos: 50px;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 body {
-    background-color: #eaeded;
+    background-color: $gray;
+}
+.navegador{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: $gray;
+    background-color: $letra;
+}
+.espacios{
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: $gray;
+    background-color: $letra;
 }

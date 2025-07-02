@@ -1,3 +1,5 @@
+@use "variable" as j;
+
 header {
     display: flex;
     flex-direction: row;
@@ -6,6 +8,7 @@ header {
     h1{
         font-size: 100px;
         font-family: cursive;
+        color: j.$letra;
     }
     .logo {
         height: 150px;
