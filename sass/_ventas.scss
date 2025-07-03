@@ -1,35 +1,51 @@
 @use "variable" as j;
 
-.titulos {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: j.$letra;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: j.$titulos;
-    margin: 25px 0;
-    .boton{
-        @include j.boton-style (50px, 40vw, j.$gray, j.$letra, cursive, 20px)
-    }
-}
-.contenedor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    gap: 15px 30px;
-    max-width: fit-content;
-    align-items: center;
-    margin: 25px auto;
-    .card {
+body{
+    .titulos {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        color: j.$letra;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: j.$titulos;
+        margin: 25px 0;
+        .boton{
+            @include j.boton-style (50px, 40vw, j.$gray, j.$letra, cursive, 20px)
+        }
+    }
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        gap: 15px 30px;
+        max-width: fit-content;
         align-items: center;
-        padding: 2rem;
-        box-shadow: 0 2px 5px rgba(1, 0 ,0);
-        img {
-            width: 300px;
-            height: auto;
+        margin: 25px auto;
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(1, 0 ,0);
+            img {
+                width: 300px;
+                height: auto;
+            }
+        }
+    }
+    @include j.compu{
+        .contenedor{
+            grid-template-columns: repeat(2, 1fr) ;
+        }
+    }
+    @include j.tablet{
+        .contenedor{
+            grid-template-columns: repeat(1, 1fr) ;
+            .card {
+                img {
+                    width: 300px;
+                }
+            }
         }
     }
 }
-
 

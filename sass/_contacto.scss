@@ -1,0 +1,52 @@
+@use "variable" as j;
+
+body {
+    .home-contacto{
+        display: flex;
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 15px;
+            gap: 10px;
+            .boton{
+                @include j.boton-style (40px, 35vw,j.$gray, j.$letra, cursive, 20px)
+            }
+        }
+        .video-c{
+            display: flex;
+            justify-content: flex-end;
+            .video{
+                width: 1000px;
+                height: auto;
+                margin: 20px;
+            }
+        }
+    }
+    @include j.compu{
+        .home-contacto{
+            display: flex;
+            flex-direction: column;
+            .video-c{
+                display: flex;
+                flex-direction: column;
+                .video{
+                    width: 500px;
+                }
+            }
+        }
+    }
+    @include j.mobile{
+        .home-contacto{
+            display: flex;
+            flex-direction: column;
+            .video-c{
+                display: flex;
+                flex-direction: column;
+                .video{
+                    width: 400px;
+                }
+            }
+        }
+    }
+}

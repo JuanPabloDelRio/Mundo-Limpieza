@@ -1,0 +1,14 @@
+@use "variable" as j;
+
+body{
+    .mapa-web{
+        .nosotros {
+            margin: 50px 30px;
+        }
+        .mapa-c{
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+        }
+    }
+}
