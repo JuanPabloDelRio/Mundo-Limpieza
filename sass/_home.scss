@@ -20,6 +20,9 @@ body {
             height: auto;
             width: 300px;
         }
+        .home:hover{
+            animation: vibrar 0.5s infinite;
+        }
     }
     .home-c{
         @extend .home-p;
@@ -37,9 +40,10 @@ body {
     }
     .subtitulos{
         font-size: j.$subtitulos;
-        color: j.$gray;
+        color: j.$gray; 
         font-family: cursive;
         background-color: j.$letra;
+        animation: fadeIn 3s ease-in-out both;
     }
     @include j.tablet {
         .home-p {
