@@ -8,20 +8,6 @@
 body {
   background-color: #eaeded;
 }
-body .navegador {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  color: #eaeded;
-  background-color: #030303;
-}
-body .navegador .espacios {
-  margin: 10px;
-  font-size: 20px;
-  text-decoration: none;
-  color: #eaeded;
-  background-color: #030303;
-}
 
 @keyframes fadeIn {
   0% {
@@ -56,8 +42,10 @@ body .navegador .espacios {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 50px;
-  padding: 20px;
+  padding: 2rem;
+  background-color: #BBFBFC;
 }
 header h1 {
   font-size: 100px;
@@ -68,12 +56,32 @@ header .logo {
   height: 150px;
   width: auto;
 }
+header .navegador .lista {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+header .navegador .lista .espacios {
+  margin: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #030303;
+}
 @media (max-width: 800px) {
   header h1 {
     font-size: 50px;
   }
   header .logo {
     height: 75px;
+  }
+  header .navegador .lista .espacios {
+    font-size: 15px;
+  }
+}
+@media (max-width: 425px) {
+  header .navegador .lista .espacios {
+    margin: 5px;
+    font-size: 10px;
   }
 }
 
@@ -137,18 +145,17 @@ body .subtitulos {
 
 body .titulos {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
   color: #030303;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 80px;
-  margin: 25px 0;
+  margin: 2rem 1rem;
 }
 body .titulos .boton {
   height: 50px;
   width: 40vw;
-  color: #eaeded;
-  background-color: #030303;
+  color: #030303;
+  background-color: #BBFBFC;
   font-family: cursive;
   font-size: 20px;
 }
@@ -207,8 +214,8 @@ body .home-contacto .formulario {
 body .home-contacto .formulario .boton {
   height: 40px;
   width: 35vw;
-  color: #eaeded;
-  background-color: #030303;
+  color: #030303;
+  background-color: #BBFBFC;
   font-family: cursive;
   font-size: 20px;
 }
@@ -225,6 +232,8 @@ body .home-contacto .video-c .video {
   body .home-contacto {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   body .home-contacto .video-c {
     display: flex;
@@ -238,6 +247,8 @@ body .home-contacto .video-c .video {
   body .home-contacto {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   body .home-contacto .video-c {
     display: flex;

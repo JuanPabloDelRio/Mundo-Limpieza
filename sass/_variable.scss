@@ -1,5 +1,6 @@
 $gray: #eaeded;
 $letra: #030303;
+$fondo: #BBFBFC;
 $titulos: 80px;
 $subtitulos: 50px;
 
@@ -11,21 +12,7 @@ $subtitulos: 50px;
 }
 body {
     background-color: $gray;
-        .navegador{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        color: $gray;
-        background-color: $letra;
-        .espacios{
-            margin: 10px;
-            font-size: 20px;
-            text-decoration: none;
-            color: $gray;
-            background-color: $letra;
-        }
     }
-}
 
 @keyframes fadeIn {
     0% {

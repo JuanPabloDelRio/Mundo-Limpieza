@@ -3,8 +3,10 @@
 header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 50px;
-    padding: 20px;
+    padding: 2rem;
+    background-color: j.$fondo;
     h1{
         font-size: 100px;
         font-family: cursive;
@@ -14,12 +16,43 @@ header {
         height: 150px;
         width: auto;
     }
+    .navegador{
+        .lista{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            .espacios{
+                margin: 10px;
+                font-size: 20px;
+                text-decoration: none;
+                color: j.$letra;
+            }
+        }
+        
+    }
     @include j.tablet {
         h1{
             font-size: 50px;
         }
         .logo {
             height: 75px;
+        }
+        .navegador{
+            .lista{
+                .espacios{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    @include j.mobile {
+        .navegador{
+            .lista{
+                .espacios{
+                    margin: 5px;
+                    font-size: 10px;
+                }
+            }
         }
     }
 }

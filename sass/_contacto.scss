@@ -10,7 +10,7 @@ body {
             padding: 15px;
             gap: 10px;
             .boton{
-                @include j.boton-style (40px, 35vw,j.$gray, j.$letra, cursive, 20px)
+                @include j.boton-style (40px, 35vw,j.$letra, j.$fondo, cursive, 20px)
             }
         }
         .video-c{
@@ -27,6 +27,8 @@ body {
         .home-contacto{
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             .video-c{
                 display: flex;
                 flex-direction: column;

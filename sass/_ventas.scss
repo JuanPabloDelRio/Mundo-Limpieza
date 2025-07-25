@@ -3,14 +3,13 @@
 body{
     .titulos {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        justify-content: space-between;
         color: j.$letra;
         font-family: Arial, Helvetica, sans-serif;
         font-size: j.$titulos;
-        margin: 25px 0;
+        margin: 2rem 1rem;
         .boton{
-            @include j.boton-style (50px, 40vw, j.$gray, j.$letra, cursive, 20px)
+            @include j.boton-style (50px, 40vw, j.$letra, j.$fondo, cursive, 20px)
         }
     }
     .contenedor{
